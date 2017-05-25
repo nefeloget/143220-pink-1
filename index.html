@@ -2,11 +2,160 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="page-header">
+      <div class="page-header__inner">
+        <div class="page-header__top">
+          <img class="page-header__logo" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение «Pink»">
+          <nav class="main-nav">
+            <button class="main-nav__toggle js-burger" type="button">Открыть меню</button>
+            <ul class="main-nav__list" hidden>
+              <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <section class="promo">
+          <div class="promo__wrap promo__wrap--picture">
+            <h1 class="promo__text">Взгляните на жизнь иначе!</h1>
+          </div>
+
+          <div class="promo__wrap promo__wrap--bg">
+            <h2 class="visually-hidden">Скачать приложение</h2>
+            <a class="btn" href="https://itunes.apple.com/app/apple-store/id375380948?pt=2003&ct=footer&mt=8">Скачать приложение</a>
+            <div class="promo-list">
+              <a class="promo-list__link promo-list__apple" href="https://itunes.apple.com/app/apple-store/id375380948?pt=2003&ct=footer&mt=8">Скачать в Apple Store</a>
+              <a class="promo-list__link promo-list__google" href="https://play.google.com/store">Скачать на Google Play</a>
+              <a class="promo-list__link promo-list__ms" href="https://www.microsoft.com/store/apps/windows-phone">Скачать в Windows Store</a>
+              <p class="promo-list__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages__wrap">
+          <h3 class="advantages__header">Устали от серости мегаполиса?</h3>
+          <h3 class="advantages__header">Нам есть, что вам предложить!</h3>
+        </div>
+        <div class="advantages__wrap">
+          <div class="advantage">
+            <h4 class="advantage__header">Поднимает настроение</h4>
+            <p class="advantage__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="advantage">
+            <h4 class="advantage__header">Поднимает настроение</h4>
+            <p class="advantage__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="advantage">
+            <h4 class="advantage__header">Заводит новых друзей</h4>
+            <p class="advantage__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="review">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="slider">
+          <div class="review__item slider__item">
+            <h3 class="review__author">Николай Петров</h3>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <div class="review__item slider__item">
+            <h3 class="review__author">Николай Петров</h3>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+          <div class="review__item slider__item">
+            <h3 class="review__author">Николай Петров</h3>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </div>
+
+          <div class="slider__controls">
+            <button class="slider__controls-toggle slider__controls-toggle--active" type="button"></button>
+            <button class="slider__controls-toggle" type="button"></button>
+            <button class="slider__controls-toggle" type="button"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="price" hidden>
+        <h2 class="visually-hidden">Тарифные пакеты</h2>
+        <div class="slider">
+          <div class="price__wrap">
+            <table class="price__table">
+              <tr class="price__header-tr">
+                <th class="price__title">
+                  <span class="price__package">База</span>
+                  <span class="price__cost ">1,99 USD</span>
+                </th>
+                <th class="price__title price__title--popular">
+                  <span class="price__package">Стандарт</span>
+                  <span class="price__cost">3,99 USD</span>
+                </th>
+                <th class="price__title">
+                  <span class="price__package">Анлим</span>
+                  <span class="price__cost">9,99 USD</span>
+                </th>
+              </tr>
+              <tr class="price__tr">
+                <td class="price__option">Розовый фильтр<span class="price__icon price__icon--yes">Да</span></td>
+                <td class="price__option">Розовый фильтр<span class="price__icon price__icon--yes">Да</span></td>
+                <td class="price__option">Розовый фильтр<span class="price__icon price__icon--yes">Да</span></td>
+              </tr>
+              <tr class="price__tr">
+                <td class="price__option">Смайлики<span class="price__icon price__icon--no">Нет</span></td>
+                <td class="price__option">Смайлики<span class="price__icon price__icon--yes">Да</span></td>
+                <td class="price__option">Смайлики<span class="price__icon price__icon--yes">Да</span></td>
+              </tr>
+              <tr class="price__tr">
+                <td class="price__option">Комментарии<span class="price__icon price__icon--no">Нет</span></td>
+                <td class="price__option">Комментарии<span class="price__icon price__icon--no">Нет</span></td>
+                <td class="price__option">Комментарии<span class="price__icon price__icon--yes">Да</span></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="slider__controls">
+            <button class="slider__controls-toggle" type="button"></button>
+            <button class="slider__controls-toggle slider__controls-toggle--active" type="button"></button>
+            <button class="slider__controls-toggle" type="button"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="contacts">
+        <p class="contacts__title">Остались вопросы?</p>
+        <p class="contacts__title">Свяжитесь с нами!</p>
+        <div class="contacts__block">
+          <p class="contacts__header">Звоните:</p>
+          <a class="contacts__text" href="tel:+78125556666">+7(812) 555-66-66</a>
+        </div>
+        <div class="contacts__block">
+          <p class="contacts__header">Пишите:</p>
+          <a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__block">
+          <p class="contacts__header">Приезжайте в гости:</p>
+          <span class="contacts__text">ул. Большая Конюшенная, 19/8</span>
+        </div>
+      </section>
+      <section class="page-footer__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d840.3627413869483!2d30.322185058080315!3d59.93661064000762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631057d105877%3A0x91c16b0cf63dfa74!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsA!5e0!3m2!1sru!2sru!4v1489300237870" width="320" height="314" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section>
+    </footer>
 
   </body>
 </html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк - Формы</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <header class="page-header">
+      <a href="index.html"><img class="page-header__logo" src="http://placehold.it/75x22" width="75" height="22" alt="Приложение «Pink»"></a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle js-burger" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">HTML Academy</a></li>
+        </ul>
+      </nav>
+
+      <section class="promo">
+        <div class="promo-wrap">
+          <h1 class="promo__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+      </section>
+    </header>
+
+    <main class="page-main">
+      <section class="contest">
+        <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
+        <p class="contest__promo">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form__fieldset">
+            <div class="form__item">
+              <label class="form__label" for="last-name">Фамилия:</label>
+              <input class="form__input" name="last-name" id="last-name" placeholder="Укажите фамилию *" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="name">Имя:</label>
+              <input class="form__input" name="name" id="name" placeholder="Введите ваше имя *" required>
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="middle-name">Отчество:</label>
+              <input class="form__input" name="middle-name" id="middle-name" placeholder="Ну и отчество тоже">
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--bg-gray">
+            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <div class="form__item">
+              <input class="form__checkbox" type="checkbox" name="achievement" id="achievement-1" checked>
+              <label class="form__label" for="achievement-1">Сделал селфи с акулой</label>
+            </div>
+            <div class="form__item">
+              <input class="form__checkbox" type="checkbox" name="achievement" id="achievement-2" checked>
+              <label class="form__label" for="achievement-2">Обгорел на пляже</label>
+            </div>
+            <div class="form__item">
+              <input class="form__checkbox" type="checkbox" name="achievement" id="achievement-3">
+              <label class="form__label" for="achievement-3">Видел Чака Норриса</label>
+            </div>
+            <div class="form__item">
+              <input class="form__checkbox" type="checkbox" name="achievement" id="achievement-4">
+              <label class="form__label" for="achievement-4">Накупил сувениров</label>
+            </div>
+            <div class="form__item">
+              <input class="form__checkbox" type="checkbox" name="achievement" id="achievement-5" checked>
+              <label class="form__label" for="achievement-5">Удержал башню</label>
+            </div>
+            <div class="form__item">
+              <input class="form__checkbox" type="checkbox" name="achievement" id="achievement-6">
+              <label class="form__label" for="achievement-6">Разгромил отель</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <div class="form__item">
+              <label class="form__label" for="phone">Номер телефона:</label>
+              <input class="form__input" type="text" name="phone" id="phone" placeholder="Номер пожалуйста">
+            </div>
+            <div class="form__item">
+              <label class="form__label" for="mail">Адрес почты:</label>
+              <input class="form__input" type="text" name="mail" id="mail" placeholder="Введите почту *" required>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--bg-gray">
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <div class="form__item">
+              <input class="form__radio" type="radio" name="soft" id="soft-1" checked>
+              <label class="form__label" for="soft-1">Pink для iOS</label>
+            </div>
+            <div class="form__item">
+              <input class="form__radio" type="radio" name="soft" id="soft-2">
+              <label class="form__label" for="soft-2">Pink на Android</label>
+            </div>
+            <div class="form__item">
+              <input class="form__radio" type="radio" name="soft" id="soft-3">
+              <label class="form__label" for="soft-3">Windows Phone</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Опишите свои эмоции</legend>
+            <label class="visually-hidden" for="impressions">Комментарий</label>
+            <textarea class="form__textarea" name="impressions" id="impressions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+
+          <button class="btn-submit" type="submit">Отправить форму</button>
+          <p class="form__footnote"><sup>*</sup> - обязательные поля</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <a class="page-footer__link" href="index.html">
+          <img src="http://placehold.it/147x40" width="147" height="40" alt="Логотип Пинк">
+        </a>
+      </div>
+
+      <div class="page-footer__social social">
+        <a class="social__link social__link--twitter" href="#">Twitter</a>
+        <a class="social__link social__link--fb" href="#">Facebook</a>
+        <a class="social__link social__link--youtube" href="#">YouTube</a>
+      </div>
+
+      <div class="copyright">Разработано:
+        <a class="copyright__link copyright__link--html" href="#">HTML Academy</a>
+      </div>
+    </footer>
+
+  </body>
+</html>
