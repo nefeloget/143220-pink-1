@@ -1,0 +1,136 @@
+.page-footer {
+  background-color: $bg-white;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 280px;
+
+  &--index {
+    display: none;
+  }
+}
+
+.page-footer__logo {
+  display: block;
+  margin-top: 40px;
+  margin-left: 66px;
+  cursor: pointer;
+}
+
+.page-footer__image {
+  width: 147px;
+  height: 40px;
+
+  &--desktop {
+    display: none;
+  }
+
+  &:hover .page-footer__image-recolor {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__copyright {
+  margin-bottom: 40px;
+}
+
+.page-footer__copyright-text {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 46px;
+  margin-left: 74px;
+  @include text($open, 14px, 18px, $text-gray)
+}
+
+.page-footer__logo-academy {
+  margin-top: 40px;
+  margin-left: 11px;
+  width: 27px;
+  height: 34px;
+  cursor: pointer;
+
+  &:hover .page-footer__logo-academy-part {
+    fill: #283645;
+  }
+
+  &:active .page-footer__logo-academy-part {
+    fill: #bec2c7;
+  }
+}
+
+@media (min-width: 660px) {
+  .page-footer {
+    display: flex;
+    max-width: 620px;
+  }
+
+  .page-footer__logo {
+    margin-top: 37px;
+    margin-left: 0px;
+  }
+
+  .page-footer__copyright {
+    margin-bottom: 40px;
+  }
+
+  .page-footer__copyright-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 56px;
+    margin-left: 79px;
+    @include text($open, 14px, 18px, $text-gray)
+  }
+
+  .page-footer__logo-academy {
+    margin-top: 50px;
+    margin-left: 9px;
+  }
+}
+
+@media (min-width: 960px) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 70px;
+  }
+
+  .page-footer__logo {
+    margin-top: 71px;
+    margin-left: 0px;
+  }
+
+  .page-footer__image {
+
+    &--mobile {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
+
+  .page-footer__copyright {
+    margin-bottom: 0;
+  }
+
+  .page-footer__copyright-text {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 90px;
+    margin-left: 0px;
+    @include text($open, 18px, 18px, $text-gray);
+  }
+
+  .page-footer__logo-academy {
+    margin-top: 84px;
+    margin-left: 8px;
+  }
+}

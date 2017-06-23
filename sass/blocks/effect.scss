@@ -1,0 +1,130 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .effect {
+    display: block;
+  }
+
+  .effect__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 620px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .effect__24 {
+    position: relative;
+    width: 176px;
+    height: 176px;
+    margin: 115px 0 20px 20px;
+    border: 13px solid $bg-pink;
+    border-radius: 50%;
+    @include text($open-b, 96px, 165px, $text-pink);
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -70px;
+      left: -31px;
+      width: 238px;
+      height: 276px;
+      z-index: -10;
+      background-image: url("../img/icon-timer.svg");
+      background-repeat: no-repeat;
+      background-size: 238px 276px;
+    }
+  }
+
+  .effect__wrapper {
+    width: 310px;
+    padding-left: 10px;
+    padding-top: 96px;
+    text-align: left;
+  }
+
+  .effect__title {
+    @include text($open-b, 30px, 36px, #000000);
+
+    br {
+      display: block;
+    }
+  }
+
+  .effect__description {
+    margin: 0;
+    padding-top: 10px;
+    @include text($open, 14px, 24px, $text-gray);
+  }
+
+  .effect__more {
+    display: block;
+    padding-top: 11px;
+    @include text($open, 14px, 24px, $text-pink);
+  }
+}
+
+@media (min-width: 960px) {
+  .effect {
+    display: block;
+    background-color: $bg-gray;
+  }
+
+  .effect__container {
+    position: relative;
+    z-index: 0;
+    max-width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .effect__24 {
+    position: relative;
+    width: 222px;
+    height: 222px;
+    margin: 108px 0 88px 22px;
+    border: 16px solid $bg-pink;
+    @include text($open-b, 120px, 210px, $text-pink);
+
+    &::before {
+      z-index: -10;
+      top: -85px;
+      left: -38px;
+      width: 298px;
+      height: 345px;
+      background-size: 298px 345px;
+    }
+  }
+
+  .effect__wrapper {
+    width: 540px;
+    padding-left: 10px;
+    padding-right: 33px;
+    padding-top: 133px;
+    text-align: left;
+  }
+
+  .effect__title {
+    @include text($open-b, 30px, 30px, #000000);
+
+    br {
+      display: none;
+    }
+  }
+
+  .effect__description {
+    margin: 0;
+    padding-top: 23px;
+    @include text($open, 18px, 30px, $text-gray);
+  }
+
+  .effect__more {
+    display: block;
+    padding-top: 31px;
+    @include text($open, 18px, 30px, $text-pink);
+  }
+}

@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 16px 35px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: $white;
+  background-color: transparent;
+  border: 3px solid $white;
+  border-radius: 25px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: all 0.2s ease;
+}

@@ -1,0 +1,5 @@
+.btn {
+  @include text($open-b, 18px, 18px);
+  border-radius: 50px;
+  border: 3px solid $text-pink;
+}

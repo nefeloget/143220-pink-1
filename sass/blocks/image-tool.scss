@@ -1,0 +1,409 @@
+.image-tool {
+  background-color: $bg-gray;
+}
+
+.image-tool__container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 280px;
+}
+
+.image-tool__btn {
+  display: none;
+}
+
+.image-tool__filters {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+  margin-bottom: 37px;
+  min-height: 44px;
+  font-size: 0;
+}
+
+.image-tool__filter {
+  display: block;
+  padding: 0 19px;
+  background-position-x: 50%;
+  cursor: pointer;
+
+  &--framing {
+    width: 44px;
+    height: 44px;
+    margin-left: -7px;
+    background-image: url("../img/icon-editor-crop.svg");
+    background-repeat: no-repeat;
+    background-size: 44px 44px;
+
+    &:hover {
+      background-image: url("../img/icon-editor-crop-h.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-editor-crop-a.svg");
+    }
+  }
+
+  &--degradation {
+    width: 48px;
+    height: 43px;
+    margin-top: 3px;
+    background-image: url("../img/icon-editor-fill.svg");
+    background-repeat: no-repeat;
+    background-size: 49px auto;
+    background-position: 14px -2px;
+
+    &:hover {
+      background-image: url("../img/icon-editor-fill-h.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-editor-fill-a.svg");
+    }
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 40px;
+    margin-top: 5px;
+    background-image: url("../img/icon-editor-contrast.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 32px;
+    background-position: 15px 2px;
+
+    &:hover {
+      background-image: url("../img/icon-editor-contrast-h.svg");
+    }
+
+    &:active {
+      background-image: url("../img/icon-editor-contrast-a.svg");
+    }
+  }
+}
+
+.image-tool__bar {
+  display: none;
+  position: relative;
+  margin: 0 19px 35px 19px;
+  max-width: 240px;
+  height: 2px;
+  background-color: $bg-nav;
+}
+
+.image-tool__toggle {
+  position: absolute;
+  top: -6px;
+  right: 34px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/icon-editor-diagram-fill.svg");
+  background-color: $bg-gray;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  cursor: pointer;
+
+  &:active {
+    background-color: $bg-pink;
+    border-radius: 50%;
+  }
+}
+
+#image-tool-btn-1:checked~.image-tool__bars .image-tool__bar-framing {
+  display: block;
+}
+
+#image-tool-btn-2:checked~.image-tool__bars .image-tool__bar-degradation {
+  display: block;
+}
+
+#image-tool-btn-3:checked~.image-tool__bars .image-tool__bar-contrast {
+  display: block;
+}
+
+.image-tool__btns {
+  margin: 0 -20px;
+  padding-top: 37px;
+  border-top: 1px solid #dddfe0;
+}
+
+.image-tool__submit-btn {
+  margin: 0 20px;
+  padding: 16px 85px 17px 85px;
+  background-color: $bg-gray;
+  color: $text-pink;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $bg-pink;
+    color: $text-white;
+  }
+
+  &:active {
+    background-color: $bg-pink;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.image-tool__reset-btn {
+  margin: 12px 20px 20px 20px;
+  padding: 16px 100px 15px 100px;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  background-color: $bg-gray;
+  color: rgba(40, 54, 69, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    border: 3px solid rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    border: 3px solid transparent;
+    background-color: rgba(40, 54, 69, 0.3);
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: 660px) {
+  .image-tool__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 56px;
+    padding-bottom: 53px;
+    max-width: 620px;
+  }
+
+  .image-tool__pic {
+    display: block;
+    width: 300px;
+    height: 100%;
+    margin-top: -1px;
+  }
+
+  .image-tool__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 300px;
+  }
+
+  .image-tool__filters {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 27px;
+    min-height: 0;
+  }
+
+  .image-tool__filter {
+    margin: 0;
+    padding: 21px 0;
+    background-position-x: 0;
+
+    &--framing {
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/icon-editor-crop.svg");
+      background-size: 22px 22px;
+      background-position: center 10px;
+    }
+
+    &--degradation {
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/icon-editor-fill.svg");
+      background-size: 24px 22px;
+      background-position: 1px 18px;
+    }
+
+    &--contrast {
+      width: 24px;
+      height: 24px;
+      background-image: url("../img/icon-editor-contrast.svg");
+      background-size: 16px 16px;
+      background-position: 6px 24px;
+    }
+  }
+
+  .image-tool__bars {
+    width: 202px;
+    padding: 0 18px;
+  }
+
+  .image-tool__bar {
+    display: block;
+    margin: 20px 0 70px 0;
+    max-width: 502px;
+    height: 2px;
+    background-color: $bg-nav;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    &::before {
+      @include pos();
+      top: 35px;
+      right: -18px;
+      width: 275px;
+      height: 1px;
+      background-color: rgba(40, 54, 69, 0.1);
+    }
+  }
+
+  .image-tool__bar-framing .image-tool__toggle {
+    top: -6px;
+    right: 42px;
+  }
+
+  .image-tool__bar-degradation .image-tool__toggle {
+    top: -6px;
+    left: 25px;
+  }
+
+  .image-tool__bar-contrast .image-tool__toggle {
+    top: -6px;
+    left: 96px;
+  }
+
+
+  .image-tool__btns {
+    margin: 0;
+    padding-top: 68px;
+    padding-left: 26px;
+    border-top: none;
+  }
+
+  .image-tool__submit-btn {
+    margin: 0;
+    margin-bottom: 24px;
+    padding: 16px 78px 17px 78px;
+    background-color: $bg-gray;
+    color: $text-pink;
+  }
+
+  .image-tool__reset-btn {
+    margin: 0;
+    padding: 15px 92px 16px 90px;
+    border: 3px solid #dddfe0;
+    background-color: $bg-gray;
+    color: #dddfe0;
+  }
+}
+
+@media (min-width: 960px) {
+  .image-tool {
+    min-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+    background-color: $bg-white;
+  }
+
+  .image-tool__container {
+    padding: 56px 0 58px 0;
+    max-width: 940px;
+    background-color: $bg-gray;
+  }
+
+  .image-tool__pic {
+    width: 300px;
+    height: 400px;
+    margin-left: 80px;
+  }
+
+  .image-tool__wrapper {
+    width: 410px;
+    margin-right: 60px;
+  }
+
+  .image-tool__filters {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    min-height: 0;
+  }
+
+  .image-tool__filter {
+    margin: 0;
+    padding: 10px 0;
+
+    &--framing {
+      width: 48px;
+      height: 48px;
+      background-image: url("../img/icon-editor-crop.svg");
+      background-size: 44px 44px;
+      background-position: 0 0;
+    }
+
+    &--degradation {
+      width: 48px;
+      height: 48px;
+      background-image: url("../img/icon-editor-fill.svg");
+      background-size: 48px 43px;
+      background-position: 0 7px;
+    }
+
+    &--contrast {
+      width: 48px;
+      height: 48px;
+      background-image: url("../img/icon-editor-contrast.svg");
+      background-size: 32px 32px;
+      background-position: 5px 12px;
+    }
+  }
+
+  .image-tool__bars {
+    width: 288px;
+    padding: 0 30px;
+  }
+
+  .image-tool__bar {
+
+    &::before {
+      right: -30px;
+      width: 410px;
+    }
+  }
+
+  .image-tool__bar-framing .image-tool__toggle {
+    left: 71px;
+  }
+
+  .image-tool__bar-degradation .image-tool__toggle {
+    left: 246px;
+  }
+
+  .image-tool__bar-contrast .image-tool__toggle {
+    left: 160px;
+  }
+
+  .image-tool__btns {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    margin: 0;
+    padding-top: 141px;
+    padding-left: 0;
+  }
+
+  .image-tool__submit-btn {
+    margin: 0;
+    margin-bottom: 0;
+    padding: 16px 36px 17px 40px;
+  }
+
+  .image-tool__reset-btn {
+    margin: 0;
+    padding: 16px 50px 17px 53px;
+    border: 3px solid #dddfe0;
+  }
+}

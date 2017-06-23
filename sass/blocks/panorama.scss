@@ -1,0 +1,28 @@
+.panorama {
+  display: block;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 137px;
+  }
+}
+
+@media (min-width: 660px) {
+  .panorama {
+
+    img {
+      height: 509px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .panorama {
+
+    img {
+      height: 506px;
+    }
+  }
+}

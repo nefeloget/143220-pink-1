@@ -1,0 +1,98 @@
+.map {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: $bg-white;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% bottom;
+  background-size: 320px auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 123px;
+    top: 0;
+    left: 0;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 35px;
+    background-position: 50% 0;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .map {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+}
+
+.map__marker {
+  position: absolute;
+  width: 36px;
+  height: 35px;
+  bottom: 69px;
+  left: 168px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  background-size: 36px 35px;
+}
+
+@media (min-width: 660px) {
+  .map {
+    position: relative;
+    width: 100%;
+    height: 375px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: 50% -348px;
+    background-repeat: no-repeat;
+    background-size: 700px auto;
+
+    &::before {
+      background-size: 100% 70px;
+      background-position: 50% 0;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .map {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
+
+  .map__marker {
+    bottom: 38.5%;
+    left: 48%;
+  }
+}
+
+@media (min-width: 960px) {
+  .map {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: -1px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-position: 50% -280px;
+    background-repeat: no-repeat;
+    background-size: 1200px auto;
+
+    &::before {
+      background-size: 100% 103px;
+      background-position: 50% 0;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .map {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
+  }
+
+  .map__marker {
+    top: 52.5%;
+    left: 48.8%;
+  }
+}

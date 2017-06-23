@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Вячеслав Величко](https://up.htmlacademy.ru/adaptive/11/user/143220).
-* Наставник: Кексобот.
+* Студент: [Анастасия Васина](https://up.htmlacademy.ru/adaptive/10/user/153140).
+* Наставник: [Полина Катышева](https://htmlacademy.ru/profile/id262423).
 
 ---
 
@@ -9,6 +9,8 @@
 
 - [Specification.md](Specification.md) — техническое задание для вашего проекта. Прочтите его и следуйте требованиям.
 - [Contributing.md](Contributing.md) — руководство по внесению изменений.
+
+--
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`._
@@ -35,7 +37,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package.json`.
 
 Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
 
-<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/26306255/51a677ea-3efb-11e7-8f8f-b2f929bfda21.png">
+<img width="769" alt="" src="https://cloud.githubusercontent.com/assets/10909/15455698/531d7e96-206d-11e6-9a36-ae5ea9c1f18c.png">
 
 Клонировать репозиторий можно так:
 
@@ -53,7 +55,7 @@ git clone SSH-адрес_вашего_форка
 
 Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Продвинутый HTML и CSS](https://htmlacademy.ru/intensive/adaptive)» от [HTML Academy](https://htmlacademy.ru).
 
-[travis-image]: https://travis-ci.org/htmlacademy-adaptive/143220-pink.svg?branch=master
-[travis-url]: https://travis-ci.org/htmlacademy-adaptive/143220-pink
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/143220-pink/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/143220-pink?type=dev
+[travis-image]: https://travis-ci.org/htmlacademy-adaptive/153140-pink.svg?branch=master
+[travis-url]: https://travis-ci.org/htmlacademy-adaptive/153140-pink
+[dependency-image]: https://david-dm.org/htmlacademy-adaptive/153140-pink/dev-status.svg?style=flat-square
+[dependency-url]: https://david-dm.org/htmlacademy-adaptive/153140-pink?type=dev

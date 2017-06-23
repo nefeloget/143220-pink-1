@@ -1,0 +1,105 @@
+.contacts-list {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  max-width: 280px;
+  text-align: center;
+}
+
+.contacts-list__questions {
+  padding-top: 17px;
+  padding-bottom: 6px;
+  @include text($open-l, 24px, 30px, $text-gray);
+}
+
+.contacts-list__contacts {
+  padding-bottom: 17px;
+}
+
+.contacts-list__contact-title {
+  @include text($open-b, 18px, 30px, $text-gray);
+}
+
+.contacts-list__contact-description {
+  margin: 0;
+  @include text($open-l, 24px, 30px, $text-pink);
+
+  a {
+    text-decoration: none;
+    color: $text-pink;
+
+    &:link, &:visited {
+      text-decoration: none;
+      color: $text-pink;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: $text-gray;
+    }
+
+    &:active {
+      text-decoration: none;
+      color: rgba(40, 54, 69, 0.3);
+    }
+  }
+}
+
+@media (min-width: 660px) {
+  .contacts-list {
+    max-width: 620px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
+  }
+
+  .contacts-list__questions {
+    margin: 0;
+    padding: 46px 30px 22px 30px;
+    @include text($open-l, 40px, 48px, $text-gray);
+  }
+
+  .contacts-list__contacts {
+    width: 250px;
+    padding: 20px 0 25px 0;
+
+    &:nth-of-type(1) {
+      margin-left: -10px;
+    }
+
+    &:nth-of-type(2) {
+      margin-right: -10px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .contacts-list {
+    max-width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contacts-list__questions {
+    margin: 0;
+    padding: 62px 150px 22px 150px;
+    @include text($open-l, 50px, 60px, $text-gray);
+  }
+
+  .contacts-list__contacts {
+    width: 250px;
+    padding: 32px 0 22px 0;
+
+    &:nth-of-type(2) {
+      order: 3;
+    }
+  }
+
+  .contacts-list__contact-description {
+    padding-top: 20px;
+  }
+}

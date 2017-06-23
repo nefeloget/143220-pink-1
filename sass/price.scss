@@ -1,0 +1,107 @@
+.price {
+  position: relative;
+  background-color: $gray;
+  padding: 100px 0 40px 0;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+.price__table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 834px;
+  box-sizing: border-box;
+  transform: translateX(-258px);
+}
+
+.price__title {
+  position: relative;
+  padding: 17px 68px 20px 68px;
+  text-align: center;
+  background-color: $secondary-color;
+  border-right: 2px solid $table-color-tr;
+  border-left: 2px solid $table-color-tr;
+  &--popular {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/bg-hit.svg");
+      background-repeat: no-repeat;
+    }
+    &::after {
+      content: 'ХИТ';
+      position: absolute;
+      display: block;
+      top: 10px;
+      left: 12px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 30px;
+      color: #ffffff;
+      text-transform: uppercase;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.price__package {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.price__cost {
+  display: block;
+  margin: 0;
+  margin-top: 2px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: $white;
+}
+
+.price__option {
+  position: relative;
+  padding: 15px 16px 14px 21px;
+  font-size: 14px;
+  line-height: 30px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  background-color: $white;
+  border-left: 2px solid $table-color-tr;
+  border-bottom: 2px solid $table-color-tr;
+}
+
+.price__icon {
+  font-size: 0;
+  position: absolute;
+  right: 16px;
+  &--yes {
+    width: 31px;
+    height: 100%;
+    background: url('../img/icon-yes.svg') no-repeat 0 0;
+    background-size: 31px;
+  }
+  &--no {
+    width: 27px;
+    height: 100%;
+    background: url('../img/icon-no.svg') no-repeat 0 0;
+    background-size: 27px;
+  }
+}

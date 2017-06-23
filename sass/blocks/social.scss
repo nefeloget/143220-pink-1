@@ -1,0 +1,78 @@
+.social {
+  display: flex;
+  margin-top: 36px;
+}
+
+.social__btn {
+  display: block;
+  width: 47px;
+  height: 47px;
+  margin-right: 12.5px;
+  border: 2px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  font-size: 0;
+
+  &--tw {
+    margin-left: 52px;
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &:active {
+      background-image: url("../img/icon-twitter-a.svg");
+    }
+  }
+
+  &--fb {
+    background-image: url("../img/icon-facebook.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &:active {
+      background-image: url("../img/icon-facebook-a.svg");
+    }
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+    background-repeat: no-repeat;
+    background-position: 18px center;
+
+    &:active {
+      background-image: url("../img/icon-youtube-a.svg");
+    }
+  }
+
+  &:hover {
+    border: 2px solid $bg-nav;
+  }
+
+  &:active {
+    border: 2px solid rgba(40, 54, 69, 0.1);
+  }
+}
+
+@media (min-width: 660px) {
+  .social {
+    margin-top: 40px;
+    margin-left: 23px;
+  }
+}
+
+@media (min-width: 960px) {
+  .social {
+    margin-top: 74px;
+    margin-left: 23px;
+  }
+
+  .page-footer--index .social {
+    margin-left: 20px;
+  }
+
+  .social__btn {
+
+    &--tw {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+// Текст
+@mixin text($font-family, $font-size, $line-height, $color: null) {
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+}
+
+// Абсолютное позиционирование
+@mixin pos($content: "", $position: absolute) {
+  content: $content;
+  position: $position;
+}
