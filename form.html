@@ -97,106 +97,94 @@
     <main class="page-main">
       <form class="form-page" action="https://echo.htmlacademy.ru" method="post">
         <div class="form-page__item form-page__item--name">
-          <div class="form-page__wrapper">
-            <fieldset class="form__fieldset form__fieldset--noborder">
-              <legend class="form__title form__title--names">Укажите данные</legend>
-              <div class="form__group">
-                <label class="form__title form__title--name" for="firstname">Фамилия:</label>
-                <input class="form__input form-name__firstname" type="text" id="firstname" name="firstname" placeholder="Укажите фамилию *" required> </div>
-              <div class="form__group">
-                <label class="form__title form__title--name" for="name">Имя:</label>
-                <input class="form__input form-name__name" type="text" id="name" name="name" placeholder="Введите ваше имя *" required> </div>
-              <div class="form__group">
-                <label class="form__title form__title--name" for="lastname">Отчество:</label>
-                <input class="form__input form-name__lastname" type="text" id="lastname" name="lastname" placeholder="Ну и отчество тоже"> </div>
-            </fieldset>
-          </div>
+          <fieldset class="form__fieldset form__fieldset--noborder">
+            <legend class="form__title form__title--names">Укажите данные</legend>
+            <div class="form__group">
+              <label class="form__title form__title--name" for="firstname">Фамилия:</label>
+              <input class="form__input form-name__firstname" type="text" id="firstname" name="firstname" placeholder="Укажите фамилию *" required> </div>
+            <div class="form__group">
+              <label class="form__title form__title--name" for="name">Имя:</label>
+              <input class="form__input form-name__name" type="text" id="name" name="name" placeholder="Введите ваше имя *" required> </div>
+            <div class="form__group">
+              <label class="form__title form__title--name" for="lastname">Отчество:</label>
+              <input class="form__input form-name__lastname" type="text" id="lastname" name="lastname" placeholder="Ну и отчество тоже"> </div>
+          </fieldset>
         </div>
         <div class="form-page__item form-page__item--activities">
-          <div class="form-page__wrapper">
-            <fieldset class="form__fieldset">
-              <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="form-activities">
-                <li class="form-activities__item">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="act1" id="act1">
-                  <label class="form-activities__label" for="act1">Сделал селфи с акулой</label>
-                </li>
-                <li class="form-activities__item">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="act2" id="act2">
-                  <label class="form-activities__label" for="act2">Обгорел на пляже</label>
-                </li>
-                <li class="form-activities__item">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="act3" id="act3">
-                  <label class="form-activities__label" for="act3">Видел Чака Норриса</label>
-                </li>
-                <li class="form-activities__item">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="act4" id="act4">
-                  <label class="form-activities__label" for="act4">Накупил сувениров</label>
-                </li>
-                <li class="form-activities__item">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="act5" id="act5">
-                  <label class="form-activities__label" for="act5">Удержал башню</label>
-                </li>
-                <li class="form-activities__item">
-                  <input class="form__input form__input--checkbox" type="checkbox" name="act6" id="act6">
-                  <label class="form-activities__label" for="act6">Разгромил отель</label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+            <ul class="form-activities">
+              <li class="form-activities__item">
+                <input class="form__input form__input--checkbox" type="checkbox" name="act1" id="act1">
+                <label class="form-activities__label" for="act1">Сделал селфи с акулой</label>
+              </li>
+              <li class="form-activities__item">
+                <input class="form__input form__input--checkbox" type="checkbox" name="act2" id="act2">
+                <label class="form-activities__label" for="act2">Обгорел на пляже</label>
+              </li>
+              <li class="form-activities__item">
+                <input class="form__input form__input--checkbox" type="checkbox" name="act3" id="act3">
+                <label class="form-activities__label" for="act3">Видел Чака Норриса</label>
+              </li>
+              <li class="form-activities__item">
+                <input class="form__input form__input--checkbox" type="checkbox" name="act4" id="act4">
+                <label class="form-activities__label" for="act4">Накупил сувениров</label>
+              </li>
+              <li class="form-activities__item">
+                <input class="form__input form__input--checkbox" type="checkbox" name="act5" id="act5">
+                <label class="form-activities__label" for="act5">Удержал башню</label>
+              </li>
+              <li class="form-activities__item">
+                <input class="form__input form__input--checkbox" type="checkbox" name="act6" id="act6">
+                <label class="form-activities__label" for="act6">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
         <div class="form-page__item form-page__item--contacts">
-          <div class="form-page__wrapper">
-            <fieldset class="form__fieldset">
-              <legend class="form__title form__title--contacts">Контактная информация</legend>
-              <ul class="form__groups">
-                <li class="form__group">
-                  <label class="form__title form__title--name" for="tel">Номер телефона</label>
-                  <input class="form__input form-name__firstname" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста"><span class="form__icon form__icon--tel"></span></li>
-                <li class="form__group">
-                  <label class="form__title form__title--name" for="mail">Адрес почты</label>
-                  <input class="form__input form-name__firstname" type="text" id="mail" name="mail" placeholder="Введите почту *" required><span class="form__icon form__icon--mail"></span></li>
-              </ul>
-            </fieldset>
-          </div>
+          <fieldset class="form__fieldset">
+            <legend class="form__title form__title--contacts">Контактная информация</legend>
+            <ul class="form__groups">
+              <li class="form__group">
+                <label class="form__title form__title--name" for="tel">Номер телефона</label>
+                <input class="form__input form-name__firstname" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста"><span class="form__icon form__icon--tel"></span></li>
+              <li class="form__group">
+                <label class="form__title form__title--name" for="mail">Адрес почты</label>
+                <input class="form__input form-name__firstname" type="text" id="mail" name="mail" placeholder="Введите почту *" required><span class="form__icon form__icon--mail"></span></li>
+            </ul>
+          </fieldset>
         </div>
         <div class="form-page__item form-page__item--whatapp">
-          <div class="form-page__wrapper">
-            <fieldset class="form__fieldset">
-              <legend class="form__title">С каким приложением путешествовали?</legend>
-              <ul class="form-whatapp">
-                <li class="form-whatapp__item">
-                  <input class="form-whatapp__radio form__input form__input--radio" id="iOS" type="radio" name="application" value="Pink для iOS" checked>
-                  <label class="form-whatapp__label" for="iOS">Pink для iOS</label>
-                </li>
-                <li class="form-whatapp__item">
-                  <input class="form-whatapp__radio form__input form__input--radio" id="Android" type="radio" name="application" value="Pink на Android">
-                  <label class="form-whatapp__label" for="Android">Pink на Android</label>
-                </li>
-                <li class="form-whatapp__item">
-                  <input class="form-whatapp__radio form__input form__input--radio" id="wp" type="radio" name="application" value="Windows Phone">
-                  <label class="form-whatapp__label" for="wp">Windows Phone</label>
-                </li>
-              </ul>
-            </fieldset>
-          </div>
+          <fieldset class="form__fieldset">
+            <legend class="form__title">С каким приложением путешествовали?</legend>
+            <ul class="form-whatapp">
+              <li class="form-whatapp__item">
+                <input class="form-whatapp__radio form__input form__input--radio" id="iOS" type="radio" name="application" value="Pink для iOS" checked>
+                <label class="form-whatapp__label" for="iOS">Pink для iOS</label>
+              </li>
+              <li class="form-whatapp__item">
+                <input class="form-whatapp__radio form__input form__input--radio" id="Android" type="radio" name="application" value="Pink на Android">
+                <label class="form-whatapp__label" for="Android">Pink на Android</label>
+              </li>
+              <li class="form-whatapp__item">
+                <input class="form-whatapp__radio form__input form__input--radio" id="wp" type="radio" name="application" value="Windows Phone">
+                <label class="form-whatapp__label" for="wp">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
         </div>
         <div class="form-page__item form-page__item--comments">
-          <div class="form-page__wrapper">
-            <fieldset class="form__fieldset">
-              <legend class="form__title">Опишите свои эмоции</legend>
-              <div class="form-comments">
-                <textarea class="form__input form__input--textarea" name="message" id="message" cols="30" rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
-              </div>
-            </fieldset>
-          </div>
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Опишите свои эмоции</legend>
+            <div class="form-comments">
+              <textarea class="form__input form__input--textarea" name="message" id="message" cols="30" rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
+            </div>
+          </fieldset>
         </div>
         <div class="form-page__item form-page__item--submit">
-          <div class="form-page__wrapper">
-            <div class="form__fieldset form__fieldset--submit">
-              <button class="btn form__submit" type="submit">Отправить форму</button>
-              <p class="required"><span class="required__pink">*</span> — обязательные <span class="required__desktop">для заполнения</span> поля</p>
-            </div>
+          <div class="form__fieldset form__fieldset--submit">
+            <button class="btn form__submit" type="submit">Отправить форму</button>
+            <p class="required"><span class="required__pink">*</span> — обязательные <span class="required__desktop">для заполнения</span> поля</p>
           </div>
         </div>
         <!-- Модальные окна -->

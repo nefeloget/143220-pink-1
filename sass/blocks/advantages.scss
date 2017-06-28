@@ -3,16 +3,12 @@
 }
 
 .advantages__decription-wrapper {
-  background-color: $bg-white;
-}
-
-.advantages__decription-container {
   margin: 0 auto;
   padding-top: 42px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 17px;
-  max-width: 280px;
+  background-color: $bg-white;
 }
 
 .advantages__decription {
@@ -90,12 +86,11 @@
 }
 
 @media (min-width: 660px) {
-  .advantages__decription-container {
+  .advantages__decription-wrapper {
     padding-top: 51px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 0px;
-    max-width: 620px;
   }
 
   .advantages__decription {
@@ -105,7 +100,7 @@
     @include text($open-l, 40px, 46px, $text-gray);
 
     &:last-child {
-      padding: 0 48px 41px 48px;
+      padding: 0 150px 50px 150px;
       margin: 0;
     }
   }
@@ -155,11 +150,10 @@
 }
 
 @media (min-width: 960px) {
-  .advantages__decription-container {
+  .advantages__decription-wrapper {
     padding-top: 67px;
     padding-left: 10px;
     padding-right: 10px;
-    max-width: 940px;
   }
 
   .advantages__decription {
