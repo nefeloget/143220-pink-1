@@ -10,7 +10,6 @@
   box-sizing: border-box;
   width: 100%;
   padding: 23px 20px;
-  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -41,8 +40,8 @@
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
+  max-width: 960px;
   padding: 22.5px 20px;
-  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -233,12 +232,10 @@
 
 @media (min-width: 660px) {
   .main-nav__opener {
-    max-width: 660px;
     padding: 27px 20px 39px 20px;
   }
 
   .main-nav__open {
-    max-width: 660px;
     padding: 27px 20px 39px 20px;
   }
 
@@ -304,7 +301,6 @@
   }
 
   .main-nav {
-    background-color: rgba(0,0,0,0.3);
 
     .main-nav__items {
       display: flex;

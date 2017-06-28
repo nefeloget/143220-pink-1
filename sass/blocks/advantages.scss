@@ -60,7 +60,7 @@
     margin-top: -18px;
   }
 
-  &--last::after {
+  &--last::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -135,7 +135,7 @@
       margin-top: 0;
     }
 
-    &--last::after {
+    &--last::before {
       content: "";
       position: absolute;
       bottom: -65px;
@@ -148,7 +148,7 @@
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .advantages__item--last::after {
+    .advantages__item--last::before {
       background-image: url("../img/iphone-screen-3-tablet@2x.png");
     }
   }
@@ -198,10 +198,10 @@
     padding: 57px 8px 28px 8px;
     text-align: center;
 
-    &::after {
+    &::before {
       content: "";
       position: absolute;
-      bottom: 288px;
+      top: -302px;
       left: -12px;
       width: 292px;
       height: 302px;
@@ -210,41 +210,27 @@
       background-size: 292px 302px;
     }
 
-    &--first::after {
-      content: "";
-      position: absolute;
-      bottom: 288px;
+    &--first::before {
       left: -15px;
-      width: 292px;
-      height: 302px;
       background-image: url("../img/iphone-screen-1-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-size: 292px 302px;
     }
 
-    &--last::after {
-      content: "";
-      position: absolute;
-      bottom: 288px;
+    &--last::before {
       left: -12px;
-      width: 292px;
-      height: 302px;
       background-image: url("../img/iphone-screen-3-desktop@1x.png");
-      background-repeat: no-repeat;
-      background-size: 292px 302px;
     }
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .advantages__item::after {
+    .advantages__item::before {
       background-image: url("../img/iphone-screen-2-desktop@2x.png");
     }
 
-    .advantages__item--first::after {
+    .advantages__item--first::before {
       background-image: url("../img/iphone-screen-1-desktop@2x.png");
     }
 
-    .advantages__item--last::after {
+    .advantages__item--last::before {
       background-image: url("../img/iphone-screen-3-desktop@2x.png");
     }
   }

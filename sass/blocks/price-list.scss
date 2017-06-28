@@ -20,7 +20,6 @@
   padding-top: 98px;
   padding-left: 20px;
   padding-right: 20px;
-  max-width: 280px;
   overflow: hidden;
 }
 
@@ -111,15 +110,15 @@
   padding-top: 3px;
 }
 
-#price-list-btn-1:checked~.price-list__slider {
+.price-list-btn-1:checked~.price-list__slider {
   transform: translateX(41px);
 }
 
-#price-list-btn-2:checked~.price-list__slider {
+.price-list-btn-2:checked~.price-list__slider {
   transform: translateX(-237px);
 }
 
-#price-list-btn-3:checked~.price-list__slider {
+.price-list-btn-3:checked~.price-list__slider {
   transform: translateX(-514px);
 }
 
@@ -145,17 +144,17 @@
   }
 }
 
-#price-list-btn-1:checked~.price-list__slider-controls .price-list__slider-control:first-child {
+.price-list-btn-1:checked~.price-list__slider-controls .price-list__slider-control:first-child {
   background-color: $bg-white;
   box-shadow: 0 0 0 3px $bg-nav;
 }
 
-#price-list-btn-2:checked~.price-list__slider-controls .price-list__slider-control:nth-child(2) {
+.price-list-btn-2:checked~.price-list__slider-controls .price-list__slider-control:nth-child(2) {
   background-color: $bg-white;
   box-shadow: 0 0 0 3px $bg-nav;
 }
 
-#price-list-btn-3:checked~.price-list__slider-controls .price-list__slider-control:nth-child(3) {
+.price-list-btn-3:checked~.price-list__slider-controls .price-list__slider-control:nth-child(3) {
   background-color: $bg-white;
   box-shadow: 0 0 0 3px $bg-nav;
 }
@@ -210,15 +209,15 @@
     }
   }
 
-  #price-list-btn-1:checked~.price-list__slider {
+  .price-list-btn-1:checked~.price-list__slider {
     transform: none;
   }
 
-  #price-list-btn-2:checked~.price-list__slider {
+  .price-list-btn-2:checked~.price-list__slider {
     transform: none;
   }
 
-  #price-list-btn-3:checked~.price-list__slider {
+  .price-list-btn-3:checked~.price-list__slider {
     transform: none;
   }
 

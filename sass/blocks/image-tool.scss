@@ -111,15 +111,15 @@
   }
 }
 
-#image-tool-btn-1:checked~.image-tool__bars .image-tool__bar-framing {
+.image-tool-btn-1:checked~.image-tool__bars .image-tool__bar-framing {
   display: block;
 }
 
-#image-tool-btn-2:checked~.image-tool__bars .image-tool__bar-degradation {
+.image-tool-btn-2:checked~.image-tool__bars .image-tool__bar-degradation {
   display: block;
 }
 
-#image-tool-btn-3:checked~.image-tool__bars .image-tool__bar-contrast {
+.image-tool-btn-3:checked~.image-tool__bars .image-tool__bar-contrast {
   display: block;
 }
 

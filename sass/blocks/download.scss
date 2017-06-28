@@ -1,7 +1,77 @@
 .download {
-  margin: 0 auto;
-  padding: 27px 20px 15px 20px;
-  max-width: 280px;
+  position: relative;
+  @media (min-width: 660px) {
+    top: 112px;
+  }
+}
+
+.download__wrapper {
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 0;
+  min-height: 466px;
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 258px auto;
+  }
+  @media (min-width: 660px) {
+    width: 94%;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: 618px;
+    background-position: bottom right;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: bottom 0 right -39px;
+    background-size: 700px auto;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: 700px auto;
+    }
+  }
+  @media (min-width: 960px) {
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+    min-height: 759px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: bottom 0 right -115px;
+    background-size: 1050px auto;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 1050px auto;
+    }
+  }
+}
+
+.download__inner {
+  top: 480px;
+  left: 0;
+  right: 0;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 6px;
+  position: absolute;
+  z-index: 15;
+  @media (min-width: 660px) {
+      top: 0;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      margin-right: 52%;
+      background-color: transparent;
+      //		margin-left: 2.2%;
+      padding-top: 110px;
+  }
+  @media (min-width: 960px) {
+      margin-right: 68%;
+  }
 }
 
 .download__slogan {
@@ -20,6 +90,7 @@
   white-space: nowrap;
   text-decoration: none;
   border: 3px solid $bg-white;
+  text-align: center;
 
   &:hover {
     color: $text-pink;
@@ -74,13 +145,6 @@
 }
 
 @media (min-width: 660px) {
-  .download {
-    max-width: 300px;
-    padding: 2px 20px 2px 20px;
-    background-color: transparent;
-    transform: translate(-160px, -267px);
-  }
-
   .download__slogan {
     display: block;
     padding-bottom: 27px;
@@ -100,11 +164,6 @@
 }
 
 @media (min-width: 960px) {
-  .download {
-    padding: 0 20px;
-    transform: translate(-321px, 216px);
-  }
-
   .download__slogan {
     padding: 0 0 54px 0;
     @include text($open-l, 50px, 60px, $text-white);

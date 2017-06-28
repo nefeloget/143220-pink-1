@@ -7,7 +7,7 @@
     <meta name="format-detection" content="address=no">
     <!-- saved from url=(0014)about:internet -->
     <title>Конкурс на самое безбашенное путешествие с Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
     <!-- Header -->
@@ -95,147 +95,134 @@
 
     <!-- Main -->
     <main class="page-main">
-
-      <!-- Форма -->
-      <form action="https://echo.htmlacademy.ru" class="journey-form" method="post">
-
-        <!-- Знакомство -->
-        <div class="journey-form__acquaintance">
-          <p class="journey-form__condition">
-            Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="journey-form__fill">Пожалуйста, заполните форму ниже:</span>
+      <form class="form-page" action="https://echo.htmlacademy.ru" method="post">
+        <div class="form-page__item form-page__item--name">
+          <div class="form-page__wrapper">
+            <fieldset class="form__fieldset form__fieldset--noborder">
+              <legend class="form__title form__title--names">Укажите данные</legend>
+              <div class="form__group">
+                <label class="form__title form__title--name" for="firstname">Фамилия:</label>
+                <input class="form__input form-name__firstname" type="text" id="firstname" name="firstname" placeholder="Укажите фамилию *" required> </div>
+              <div class="form__group">
+                <label class="form__title form__title--name" for="name">Имя:</label>
+                <input class="form__input form-name__name" type="text" id="name" name="name" placeholder="Введите ваше имя *" required> </div>
+              <div class="form__group">
+                <label class="form__title form__title--name" for="lastname">Отчество:</label>
+                <input class="form__input form-name__lastname" type="text" id="lastname" name="lastname" placeholder="Ну и отчество тоже"> </div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="form-page__item form-page__item--activities">
+          <div class="form-page__wrapper">
+            <fieldset class="form__fieldset">
+              <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="form-activities">
+                <li class="form-activities__item">
+                  <input class="form__input form__input--checkbox" type="checkbox" name="act1" id="act1">
+                  <label class="form-activities__label" for="act1">Сделал селфи с акулой</label>
+                </li>
+                <li class="form-activities__item">
+                  <input class="form__input form__input--checkbox" type="checkbox" name="act2" id="act2">
+                  <label class="form-activities__label" for="act2">Обгорел на пляже</label>
+                </li>
+                <li class="form-activities__item">
+                  <input class="form__input form__input--checkbox" type="checkbox" name="act3" id="act3">
+                  <label class="form-activities__label" for="act3">Видел Чака Норриса</label>
+                </li>
+                <li class="form-activities__item">
+                  <input class="form__input form__input--checkbox" type="checkbox" name="act4" id="act4">
+                  <label class="form-activities__label" for="act4">Накупил сувениров</label>
+                </li>
+                <li class="form-activities__item">
+                  <input class="form__input form__input--checkbox" type="checkbox" name="act5" id="act5">
+                  <label class="form-activities__label" for="act5">Удержал башню</label>
+                </li>
+                <li class="form-activities__item">
+                  <input class="form__input form__input--checkbox" type="checkbox" name="act6" id="act6">
+                  <label class="form-activities__label" for="act6">Разгромил отель</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+        <div class="form-page__item form-page__item--contacts">
+          <div class="form-page__wrapper">
+            <fieldset class="form__fieldset">
+              <legend class="form__title form__title--contacts">Контактная информация</legend>
+              <ul class="form__groups">
+                <li class="form__group">
+                  <label class="form__title form__title--name" for="tel">Номер телефона</label>
+                  <input class="form__input form-name__firstname" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста"><span class="form__icon form__icon--tel"></span></li>
+                <li class="form__group">
+                  <label class="form__title form__title--name" for="mail">Адрес почты</label>
+                  <input class="form__input form-name__firstname" type="text" id="mail" name="mail" placeholder="Введите почту *" required><span class="form__icon form__icon--mail"></span></li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+        <div class="form-page__item form-page__item--whatapp">
+          <div class="form-page__wrapper">
+            <fieldset class="form__fieldset">
+              <legend class="form__title">С каким приложением путешествовали?</legend>
+              <ul class="form-whatapp">
+                <li class="form-whatapp__item">
+                  <input class="form-whatapp__radio form__input form__input--radio" id="iOS" type="radio" name="application" value="Pink для iOS" checked>
+                  <label class="form-whatapp__label" for="iOS">Pink для iOS</label>
+                </li>
+                <li class="form-whatapp__item">
+                  <input class="form-whatapp__radio form__input form__input--radio" id="Android" type="radio" name="application" value="Pink на Android">
+                  <label class="form-whatapp__label" for="Android">Pink на Android</label>
+                </li>
+                <li class="form-whatapp__item">
+                  <input class="form-whatapp__radio form__input form__input--radio" id="wp" type="radio" name="application" value="Windows Phone">
+                  <label class="form-whatapp__label" for="wp">Windows Phone</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+        <div class="form-page__item form-page__item--comments">
+          <div class="form-page__wrapper">
+            <fieldset class="form__fieldset">
+              <legend class="form__title">Опишите свои эмоции</legend>
+              <div class="form-comments">
+                <textarea class="form__input form__input--textarea" name="message" id="message" cols="30" rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <div class="form-page__item form-page__item--submit">
+          <div class="form-page__wrapper">
+            <div class="form__fieldset form__fieldset--submit">
+              <button class="btn form__submit" type="submit">Отправить форму</button>
+              <p class="required"><span class="required__pink">*</span> — обязательные <span class="required__desktop">для заполнения</span> поля</p>
+            </div>
+          </div>
+        </div>
+        <!-- Модальные окна -->
+        <section class="popup-success  popup-success--closed">
+          <b class="popup-success__title">Ваша заявка отправлена</b>
+          <p class="popup-success__description">
+            Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
           </p>
-        </div>
-
-        <div class="journey-form__acquaintance-wrapper">
-          <label class="journey-form__acquaintance-signature" for="journey-form-surname-field">Фамилия:</label>
-          <input class="journey-form__acquaintance-input  journey-form__acquaintance-input--necessarily" type="text" name="journey-form-surname" id="journey-form-surname-field" placeholder="Укажите фамилию *" required>
-          <label class="journey-form__acquaintance-signature" for="journey-form-name-field">Имя:</label>
-          <input class="journey-form__acquaintance-input  journey-form__acquaintance-input--necessarily" type="text" name="journey-form-name" id="journey-form-name-field" placeholder="Введите ваше имя *" required>
-          <label class="journey-form__acquaintance-signature" for="journey-form-patronymic-field">Отчество:</label>
-          <input class="journey-form__acquaintance-input" type="text" name="journey-form-patronymic" id="journey-form-patronymic-field" placeholder="Ну и отчество тоже">
-        </div>
-
-        <!-- Достижения -->
-        <div class="journey-form__achievements">
-          <div class="journey-form__achievements-container">
-            <h3 class="journey-form__achievements-title">
-              Ваши безбашенные достижения в путешествии
-            </h3>
-            <div class="journey-form__achievement-wrapper">
-              <label class="journey-form__achievement">
-                <input class="journey-form__checkbox" type="checkbox" name="journey-form-shark" checked>
-                <span class="journey-form__indicator-checkbox"></span>
-                Сделал селфи с акулой
-              </label>
-              <label class="journey-form__achievement">
-                <input class="journey-form__checkbox" type="checkbox" name="journey-form-sunburn" checked>
-                <span class="journey-form__indicator-checkbox"></span>
-                Обгорел на пляже
-              </label>
-              <label class="journey-form__achievement">
-                <input class="journey-form__checkbox" type="checkbox" name="journey-form-norris">
-                <span class="journey-form__indicator-checkbox"></span>
-                Видел Чака Норриса
-              </label>
-              <label class="journey-form__achievement">
-                <input class="journey-form__checkbox" type="checkbox" name="journey-form-souvenirs">
-                <span class="journey-form__indicator-checkbox"></span>
-                Накупил сувениров
-              </label>
-              <label class="journey-form__achievement">
-                <input class="journey-form__checkbox" type="checkbox" name="journey-form-tower" checked>
-                <span class="journey-form__indicator-checkbox"></span>
-                Удержал башню
-              </label>
-              <label class="journey-form__achievement">
-                <input class="journey-form__checkbox" type="checkbox" name="journey-form-hotel">
-                <span class="journey-form__indicator-checkbox"></span>
-                Разгромил отель
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Контакты -->
-        <div class="journey-form__contacts">
-          <h3 class="journey-form__contacts-title">
-            Контактная информация
-          </h3>
-          <div class="journey-form__contacts-wrapper">
-            <label class="journey-form__acquaintance-signature  journey-form__contacts-signature" for="journey-form-tel-field">Номер телефона</label>
-            <input class="journey-form__acquaintance-input  journey-form__contacts-input" type="tel" name="journey-form-tel" id="journey-form-tel-field" placeholder="Номер, пожалуйста">
-            <label class="journey-form__acquaintance-signature  journey-form__contacts-signature" for="journey-form-email-field">Адрес почты</label>
-            <input class="journey-form__acquaintance-input  journey-form__acquaintance-input--necessarily  journey-form__contacts-input" type="email" name="journey-form-email" id="journey-form-email-field" required placeholder="Введите почту *">
-          </div>
-        </div>
-
-        <!-- Приложение -->
-        <div class="journey-form__application">
-          <div class="journey-form__application-container">
-            <h3 class="journey-form__application-title">
-              С каким приложением путешествовали?
-            </h3>
-            <div class="journey-form__application-interview">
-              <label class="journey-form__application-wrapper">
-                <input class="journey-form__radio" type="radio" name="journey-form-application" value="ios" checked>
-                <span class="journey-form__indicator-radio"></span>
-                Pink для IOS
-              </label>
-              <label class="journey-form__application-wrapper">
-                <input class="journey-form__radio" type="radio" name="journey-form-application" value="android">
-                <span class="journey-form__indicator-radio"></span>
-                Pink на Android
-              </label>
-              <label class="journey-form__application-wrapper">
-                <input class="journey-form__radio" type="radio" name="journey-form-application" value="windows-phone">
-                <span class="journey-form__indicator-radio"></span>
-                Windows Phone
-              </label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Финал -->
-        <div class="journey-form__final">
-          <h3 class="journey-form__final-title">
-            Опишите свои эмоции
-          </h3>
-          <div class="journey-form__final-wrapper">
-            <textarea class="journey-form__final-review" name="journey-form-emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </div>
-
-          <!-- Модальные окна -->
-          <section class="popup-success  popup-success--closed">
-            <b class="popup-success__title">Ваша заявка отправлена</b>
-            <p class="popup-success__description">
-              Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
-            </p>
-            <div class="popup-success__btn-container">
-              <button type="button" class="popup-success__btn">
-                Закрыть окно
-              </button>
-            </div>
-          </section>
-
-          <section class="popup-failure  popup-failure--closed">
-            <b class="popup-failure__title">Что-то пошло не так!</b>
-            <p class="popup-failure__description">
-              Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-            </p>
-            <button type="button" class="popup-failure__btn">
-              Ок
+          <div class="popup-success__btn-container">
+            <button type="button" class="popup-success__btn">
+              Закрыть окно
             </button>
-          </section>
+          </div>
+        </section>
 
-          <div class="popup-overlay"></div>
-        </div>
-
-        <div class="journey-form__final-container">
-          <button class="journey-form__submit-btn">Отправить форму</button>
-          <p class="journey-form__necessarily">
-            <span class="journey-form__star">*</span> — обязательные <span class="journey-form__final-fill">для заполнения</span> поля
+        <section class="popup-failure  popup-failure--closed">
+          <b class="popup-failure__title">Что-то пошло не так!</b>
+          <p class="popup-failure__description">
+            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
           </p>
-        </div>
+          <button type="button" class="popup-failure__btn">
+            Ок
+          </button>
+        </section>
+
+        <div class="popup-overlay"></div>
       </form>
     </main>
 
@@ -306,7 +293,7 @@
       </section>
     </footer>
 
-    <script type="text/javascript" src="js/script.js">
+    <script type="text/javascript" src="js/script.min.js">
     </script>
     <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
   </body>
