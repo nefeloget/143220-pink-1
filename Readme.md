@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Анастасия Васина](https://up.htmlacademy.ru/adaptive/10/user/153140).
-* Наставник: [Полина Катышева](https://htmlacademy.ru/profile/id262423).
+* Студент: [Величко Вячеслав](https://up.htmlacademy.ru/adaptive/11/user/143220).
+* Наставник: `Кексобот`.
 
 ---
 
